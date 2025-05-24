@@ -1,9 +1,7 @@
 package br.com.jpmoraess.spring_kotlin_kafka_avro.common.kafka.config.properties
 
 import org.springframework.boot.context.properties.ConfigurationProperties
-import org.springframework.context.annotation.Configuration
 
-@Configuration
 @ConfigurationProperties(prefix = "kafka-consumer-config")
 data class KafkaConsumerConfigProperties(
     val keyDeserializer: String,
