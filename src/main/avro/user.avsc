@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "User",
+  "namespace": "br.com.jpmoraess.spring_kotlin_kafka_avro",
+  "fields": [
+    { "name": "id", "type": "int" },
+    { "name": "name", "type": "string" },
+    { "name": "email", "type": ["null", "string"], "default": null },
+    { "name": "isActive", "type": "boolean", "default": true }
+  ]
+}
